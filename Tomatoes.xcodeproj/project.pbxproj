@@ -14,13 +14,16 @@
 		AA4176AA1881EF2600DF1BF3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4176A91881EF2600DF1BF3 /* main.m */; };
 		AA4176AE1881EF2600DF1BF3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4176AD1881EF2600DF1BF3 /* AppDelegate.m */; };
 		AA4176B11881EF2600DF1BF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA4176AF1881EF2600DF1BF3 /* Main.storyboard */; };
-		AA4176B41881EF2600DF1BF3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4176B31881EF2600DF1BF3 /* ViewController.m */; };
 		AA4176B61881EF2600DF1BF3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA4176B51881EF2600DF1BF3 /* Images.xcassets */; };
 		AA4176BD1881EF2600DF1BF3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA4176BC1881EF2600DF1BF3 /* XCTest.framework */; };
 		AA4176BE1881EF2600DF1BF3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA41769D1881EF2600DF1BF3 /* Foundation.framework */; };
 		AA4176BF1881EF2600DF1BF3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA4176A11881EF2600DF1BF3 /* UIKit.framework */; };
 		AA4176C71881EF2600DF1BF3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA4176C51881EF2600DF1BF3 /* InfoPlist.strings */; };
 		AA4176C91881EF2600DF1BF3 /* TomatoesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4176C81881EF2600DF1BF3 /* TomatoesTests.m */; };
+		AA4176D71881F01700DF1BF3 /* MovieListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4176D61881F01700DF1BF3 /* MovieListViewController.m */; };
+		AA4176DA1881F39C00DF1BF3 /* MovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4176D91881F39C00DF1BF3 /* MovieViewController.m */; };
+		AA4176E01883548200DF1BF3 /* Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4176DF1883548200DF1BF3 /* Movie.m */; };
+		AA4176E318835F2A00DF1BF3 /* MovieCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4176E218835F2A00DF1BF3 /* MovieCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +48,20 @@
 		AA4176AC1881EF2600DF1BF3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AA4176AD1881EF2600DF1BF3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		AA4176B01881EF2600DF1BF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AA4176B21881EF2600DF1BF3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		AA4176B31881EF2600DF1BF3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		AA4176B51881EF2600DF1BF3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AA4176BB1881EF2600DF1BF3 /* TomatoesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TomatoesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA4176BC1881EF2600DF1BF3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		AA4176C41881EF2600DF1BF3 /* TomatoesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TomatoesTests-Info.plist"; sourceTree = "<group>"; };
 		AA4176C61881EF2600DF1BF3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AA4176C81881EF2600DF1BF3 /* TomatoesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TomatoesTests.m; sourceTree = "<group>"; };
+		AA4176D51881F01700DF1BF3 /* MovieListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieListViewController.h; sourceTree = "<group>"; };
+		AA4176D61881F01700DF1BF3 /* MovieListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieListViewController.m; sourceTree = "<group>"; };
+		AA4176D81881F39C00DF1BF3 /* MovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieViewController.h; sourceTree = "<group>"; };
+		AA4176D91881F39C00DF1BF3 /* MovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieViewController.m; sourceTree = "<group>"; };
+		AA4176DE1883548200DF1BF3 /* Movie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Movie.h; sourceTree = "<group>"; };
+		AA4176DF1883548200DF1BF3 /* Movie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Movie.m; sourceTree = "<group>"; };
+		AA4176E118835F2A00DF1BF3 /* MovieCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieCell.h; sourceTree = "<group>"; };
+		AA4176E218835F2A00DF1BF3 /* MovieCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,10 +124,16 @@
 				AA4176AC1881EF2600DF1BF3 /* AppDelegate.h */,
 				AA4176AD1881EF2600DF1BF3 /* AppDelegate.m */,
 				AA4176AF1881EF2600DF1BF3 /* Main.storyboard */,
-				AA4176B21881EF2600DF1BF3 /* ViewController.h */,
-				AA4176B31881EF2600DF1BF3 /* ViewController.m */,
 				AA4176B51881EF2600DF1BF3 /* Images.xcassets */,
 				AA4176A41881EF2600DF1BF3 /* Supporting Files */,
+				AA4176D51881F01700DF1BF3 /* MovieListViewController.h */,
+				AA4176D61881F01700DF1BF3 /* MovieListViewController.m */,
+				AA4176D81881F39C00DF1BF3 /* MovieViewController.h */,
+				AA4176D91881F39C00DF1BF3 /* MovieViewController.m */,
+				AA4176DE1883548200DF1BF3 /* Movie.h */,
+				AA4176DF1883548200DF1BF3 /* Movie.m */,
+				AA4176E118835F2A00DF1BF3 /* MovieCell.h */,
+				AA4176E218835F2A00DF1BF3 /* MovieCell.m */,
 			);
 			path = Tomatoes;
 			sourceTree = "<group>";
@@ -249,9 +264,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA4176B41881EF2600DF1BF3 /* ViewController.m in Sources */,
+				AA4176E01883548200DF1BF3 /* Movie.m in Sources */,
 				AA4176AE1881EF2600DF1BF3 /* AppDelegate.m in Sources */,
+				AA4176E318835F2A00DF1BF3 /* MovieCell.m in Sources */,
+				AA4176D71881F01700DF1BF3 /* MovieListViewController.m in Sources */,
 				AA4176AA1881EF2600DF1BF3 /* main.m in Sources */,
+				AA4176DA1881F39C00DF1BF3 /* MovieViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
