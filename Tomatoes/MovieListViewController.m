@@ -57,6 +57,23 @@
     return self;
 }
 
+
+- (void)downloadImageWithURL:(NSURL *)url completionBlock:(void (^)(BOOL succeeded, UIImage *image))completionBlock
+{
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+    [NSURLConnection sendAsynchronousRequest:request
+        queue:[NSOperationQueue mainQueue]
+        completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
+     if ( !error )
+     {
+        UIImage *image = [[UIImage alloc] initWithData:data];
+        completionBlock(YES,image);
+    } else{
+        completionBlock(NO,nil);
+    }
+    }];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -100,7 +117,18 @@
     cell.movieTitleLabel.text = movie.title;
     cell.movieSynopsisLabel.text = movie.synopsis;
     cell.movieCastLabel.text = movie.cast;
-    cell.imageView.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:movie.imageURL]]];
+   // cell.imageView.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:movie.imageURL]]];
+    
+    // download the image asynchronously
+    [self downloadImageWithURL:[NSURL URLWithString:movie.imageURL] completionBlock:^(BOOL succeeded, UIImage *image) {
+        if (succeeded) {
+            // change the image in the cell
+            cell.imageView.image = image;
+            
+            // cache the image for use later (when scrolling up)
+            //movie.image = image;
+        }
+    }];
     
     return cell;
     
